@@ -18,11 +18,11 @@ app.get('/api/health', (req, res) => {
 });
 
 // Fix the path for static files
-// app.use(express.static(path.join(__dirname, 'client/dist')));
+app.use(express.static(path.join(__dirname, 'client/dist')));
 
 // Use a regex or specific pattern instead of bare '*'
-// app.get(/\/(.*)/, (req, res) => {
-//   res.sendFile(path.join(__dirname, 'client/dist/index.html'));
-// });
+app.get(/\/(.*)/, (req, res) => {
+  res.sendFile(path.join(__dirname, 'client/dist/index.html'));
+});
 
 app.listen(port, () => console.log(`Server running on port: ${port}`));
