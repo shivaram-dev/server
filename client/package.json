@@ -4,7 +4,6 @@
   "version": "0.0.0",
   "type": "module",
   "proxy": "https://server-ten-cyan-25.vercel.app",
-
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -13,7 +12,8 @@
   },
   "dependencies": {
     "react": "^19.1.1",
-    "react-dom": "^19.1.1"
+    "react-dom": "^19.1.1",
+    "react-router-dom": "^7.9.5"
   },
   "devDependencies": {
     "@eslint/js": "^9.36.0",
